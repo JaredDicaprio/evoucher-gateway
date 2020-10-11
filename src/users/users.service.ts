@@ -7,24 +7,24 @@ export class UsersService {
   private readonly users: User[];
 
   constructor() {
-    // hard code users
+    // hard coded users
     this.users = [
       {
         userId: 1,
-        email: 'ichigo2297@gmail.com',
+        email: 'user123@gmail.com',
         password: '123',
         phoneNumber: '09799923443',
       },
       {
         userId: 2,
-        email: 'chris@gmail.com',
-        password: 'secret',
+        email: 'user456@gmail.com',
+        password: '456',
         phoneNumber: '09799923445',
       },
       {
         userId: 3,
-        email: 'maria@gmail.com',
-        password: 'guess',
+        email: 'user789@gmail.com',
+        password: '789',
         phoneNumber: '09799923447',
       },
     ];

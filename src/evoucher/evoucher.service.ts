@@ -41,4 +41,8 @@ export class EvoucherService {
   public buy(data) {
     return this.client.send('buy', data);
   }
+
+  public history(data) {
+    return this.client.send('history', data);
+  }
 }

@@ -49,4 +49,10 @@ export class EvoucherController {
   async checkout(@Body('data') data) {
     return this.evoucherService.buy(data);
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('history')
+  async history(@Body('data') data) {
+    return this.evoucherService.history(data);
+  }
 }
